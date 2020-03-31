@@ -1,0 +1,27 @@
+[
+    {
+	    "avatar": "/medias/avatars/kong.png",
+	    "name": "API网关KONG",
+	    "introduction": "高性能网关",
+	    "url": "https://konghq.com/",
+	    "title": "了解一下"
+    },{
+        "name": "湖南师范大学",
+        "url": "https://www.hunnu.edu.cn/",
+        "title": "访问主页",
+        "introduction": "湖南师范大学欢迎您！！！",
+        "avatar": "/medias/avatars/hunanshifandaxue.jpg"
+    },{
+        "name": "Kubernetes",
+        "url": "https://kubernetes.io/",
+        "title": "前去学习",
+        "introduction": "k8s，下一代分布式架构的王者",
+        "avatar": "/medias/avatars/k8s.png"
+    },{
+        "name": "招银网络",
+        "url": "https://cmbnt.cmbchina.com/",
+        "title": "欢迎加入",
+        "introduction": "追求高标准的交付和价值创造",
+        "avatar": "/medias/avatars/zywl.png"
+    }
+]
