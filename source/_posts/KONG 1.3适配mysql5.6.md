@@ -4,9 +4,9 @@ date: 2020-05-03 19:27:00
 author: DemonLee
 img: /medias/banner/kong&docker.png
 coverImg: /medias/banner/kong&docker.png
-top: true
-cover: true
-toc: true
+top: false
+cover: false
+toc: false
 mathjax: false
 summary: 
   总结一下上一份工作的有关于API 网关KONG的内容，简单做一下回顾和总结

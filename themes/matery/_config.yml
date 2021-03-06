@@ -43,9 +43,9 @@ menu:
 # Index cover carousel configuration.
 # 首页封面轮播图的相关配置.
 cover:
-  showPrevNext: true # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
-  showIndicators: true # 是否显示指示器. # Whether to display the indicators
-  autoLoop: true # 是否自动轮播. Whether it is automatically rotated.
+  showPrevNext: false # 是否显示左右切换按钮. Whether to display the left and right toggle buttons.
+  showIndicators: false # 是否显示指示器. # Whether to display the indicators
+  autoLoop: false # 是否自动轮播. Whether it is automatically rotated.
   duration: 120 # 切换延迟时间. Switching delay time.
   intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
 
@@ -53,7 +53,7 @@ cover:
 # 配置首页显示"梦想"的语句.
 dream:
   enable: false
-  showTitle: true
+  showTitle: false
   title: 我的梦想
   text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
 
@@ -77,15 +77,15 @@ music:
 # 是否在首页显示视频.
 video:
   enable: false
-  showTitle: true
+  showTitle: false
   title: 看看视频
-  url: https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4 # 必填
+  url:  # 必填
   pic:
   thumbnails:
   height: # 如：400
   autoplay: false # 是否自动播放
   theme: '#42b983'
-  loop: true # 是否循环播放
+  loop: false # 是否循环播放
   preload: 'auto' # 预加载，可选值: 'none', 'metadata', 'auto'
   volume: 0.7
 
@@ -93,7 +93,7 @@ video:
 # Whether to display the title of the recommended posts
 # 是否显示推荐文章的标题
 recommend:
-  showTitle: true
+  showTitle: false
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
@@ -126,7 +126,7 @@ socialLink:
 toc:
   enable: true
   heading: h1, h2, h3, h4, h5
-  showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
+  showToggleBtn: false # 是否显示切换TOC目录展开收缩的按钮
 
 # Whether the code is broken.
 # 代码是否换行
@@ -154,7 +154,7 @@ copyright:
 # 是否激活mathjax数学公式，这是全局配置，但文章仍然不会都开启mathjax渲染，
 # 考虑到mathjax加载比较耗时，你还需要在需要渲染的文章的Front-matter中再加上`mathjax: true`才行.
 mathjax:
-  enable: true
+  enable: false
   cdn: https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 # Post word count, reading duration, site total word count.
@@ -164,14 +164,14 @@ mathjax:
 # 激活前请确认你已经安装了 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
 wordCount:
   enable: false
-  postWordCount: true
-  min2read: true
-  totalCount: true
+  postWordCount: false
+  min2read: false
+  totalCount: false
 
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
 clicklove:
-  enable: true
+  enable: false
 
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
@@ -207,32 +207,32 @@ myProjects:
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的技能"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 mySkills:
-  enable: false
+  enable: true
   data:
-    算法:
+    python:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
       percent: 80%
-    C++:
+    jave:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 70%
-    Python:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
-      percent: 95%
-    Java:
-      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
       percent: 50%
+    golang:
+      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+      percent: 30%
+    lua:
+      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
+      percent: 20%
     SQL:
       background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 50%
-    HTML:
+      percent: 80%
+    k8s:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 70%
+      percent: 40%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myGallery:
-  enable: true
+  enable: false
   data:
     - /medias/featureimages/0.jpg
     - /medias/featureimages/1.jpg
@@ -319,8 +319,8 @@ verifyPassword:
 # 不蒜子(http://busuanzi.ibruce.info/) 网站统计
 busuanziStatistics:
   enable: false
-  totalTraffic: true # 总访问量
-  totalNumberOfvisitors: true # 总人次
+  totalTraffic: false # 总访问量
+  totalNumberOfvisitors: false # 总人次
 
 # Add google analytics configuration
 # 添加 Google Analytics 配置
@@ -441,26 +441,26 @@ baidu_push: true
 
 # 页面樱花飘落动效
 sakura:
-  enable: true
+  enable: false
 
 # 鼠标点击烟花爆炸动效
 fireworks:
-  enable: true
+  enable: false
 
 
 # 天气控件 Weather Widget
 weather:
-  enable: true
+  enable: false
 
 
 # 鼠标点击文字特效 
 wenzi:
-  enable: true
+  enable: false
 
 
 # 背景雪花飘落特效
 xuehuapiaoluo:
-  enable: true
+  enable: false
 
 # Tidio online contact 
 tidio:
@@ -470,7 +470,7 @@ tidio:
 
 #背景canvas-nest
 canvas_nest:
-  enable: true
+  enable: false
   color: 0,0,255 #线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   pointColor: 0,0,255 #交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   opacity: 0.8 # 线条透明度（0~1）, 默认: 0.5
@@ -487,7 +487,7 @@ ribbon:
 
 #背景动态彩带
 ribbon_dynamic:
-  enable: true 
+  enable: false
 
 
 
